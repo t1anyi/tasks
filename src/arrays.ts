@@ -84,16 +84,7 @@ export function countShortWords(words: string[]): number {
  */
 export function allRGB(colors: string[]): boolean {
     let allowed: string[] = ["red", "green", "blue"];
-    if (colors.length === 0) {
-        return true;
-    }
-
-    for (let i = 0; i < colors.length; i++) {
-        if (!allowed.includes(colors[i])) {
-            return false;
-        }
-    }
-    return true;
+    return colors.every((color: string): boolean => allowed.includes(color));
 }
 
 /**
