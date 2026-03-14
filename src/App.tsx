@@ -23,6 +23,8 @@ function App(): React.JSX.Element {
                 UD CISC275 with React Hooks and TypeScript James Wu
             </header>
             <hr></hr>
+            {<DoubleHalf></DoubleHalf>}
+            <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
             <GiveAttempts></GiveAttempts>
